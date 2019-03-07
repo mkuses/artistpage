@@ -1,0 +1,979 @@
+@charset "utf-8";
+
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1001;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.text-center {
+    text-align:center;
+}
+
+
+
+
+.col-xs-12{
+    float:left
+}
+.col-xs-12{
+    width:100%
+}
+@media (min-width:768px){
+    .col-sm-5,.col-sm-6,.col-sm-12{float:left}
+    .col-sm-1{float:right;}
+    .col-sm-5{width:55%}
+    .col-sm-6{width:44.66666667%;}
+    .col-sm-1{width:86.33333333%}
+}
+@media (min-width:992px){
+    .col-md-6{float:left;}
+    .col-md-6{width:50%;}
+    .col-md-offset-3{margin-left:25%}
+}
+
+.col-sm-5,
+.col-sm-6,
+.col-sm-12,
+.col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+    min-height: 1px;
+}
+
+.container:before,
+.container:after{
+    display:table;content:" "}
+
+.container:after{
+    
+    clear:both
+}
+
+.col-md-6 {
+    float:left;
+}
+
+@media all and (max-width: 1200px) {
+    .header__social-icons { display: none; }
+    .fixscroll1, .fixscroll {   
+        height: 50px; 
+        margin-top: 1%; 
+    }   
+    .alignleft img, .alignright img { height: 28px; }
+}
+
+
+@media all and (max-height: 786px) {
+    .home-main-content {height: 90% !important;}
+}
+
+
+@media all and (max-height: 620px) {
+    .songlist ul {height: 400px;}
+}
+
+@media all and (max-width: 786px){
+    
+    .song a {min-width: 50%;}
+    .songs ul {font-size: 14px; min-width:50%; }
+    .alignleft, .alignright  {  
+        width: 100% !important; 
+        text-align: center !important; 
+        margin-top:0; 
+        margin-bottom: 0; 
+    }
+    .fixscroll1, .fixscroll { display: none;}
+    .home-main-content {height: 88% !important;}
+}
+
+
+@media all and (max-width: 1300px){
+    .col-sm-1 {width: auto;}
+    .songlist ul {display:none;}
+    .english_lyrics, .japanese_lyrics { width: 100% !important;}   
+}
+
+
+
+
+/* =======================================
+1. Header  
+======================================== */
+
+.header {
+	position: fixed;
+	z-index: 3;
+	height: auto;
+	width: 100%;
+    min-width: 500px;
+    background: url(../images/header_color.png); 
+}
+
+.header1 {
+	position: fixed;
+	z-index: 5;
+	height: auto;
+	width: 100%;
+    min-width: 500px;
+}
+
+.header__wrapper {
+    position: relative;
+    z-index: 3000;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header__title-wrapper {
+    
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 20px;
+    position: relative;
+    z-index: 200; 
+}
+
+.header__navigation {
+    min-width: 300px;			
+    display: none;
+    z-index: 100;
+}
+
+.header__navigation a {
+    display: block;
+    
+}
+
+.header__social-icons {
+    z-index: 1001;
+    float: right;
+    margin-right: 2%;
+    margin-top: 12px;
+    margin-bottom: 8px;            
+}
+
+.header__social-icons .size {
+    font-size: 14px;
+    font-weight: bold;			
+}
+
+.header__social-icons .size1{  
+    font-size: 18px;
+    font-weight: 600;			
+}
+
+
+.header__social-icons a {
+    float: left;
+    margin-left: 50px;
+    text-decoration: none;
+    outline: none;
+    text-shadow: 0 0 20px black;
+    color: rgba(255,255,255,0.9);	
+}
+
+@media all and (max-width:1200px) {
+     .header, .header1 { height: 50px;  }
+     .header__title-wrapper { width: 150px;  } 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+h2,
+h3,
+ {
+    font-weight: 300;
+    margin-top: .8em;
+    color:#525252;
+}
+
+
+h2 {
+    font-size: 1.5em;
+    line-height: 3rem;
+    margin-bottom: .9rem;
+}
+h3 {
+    font-weight: 500;
+    margin-bottom: .9rem;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    font-family: "メイリオ" sans-serif;
+    
+}
+h4 {
+    font-weight: 600;
+    margin-top: .5em;
+    color:#525252;
+    font-size: 1.6rem;
+    line-height: 1em;
+    margin-bottom: .5em;
+    border-bottom: 3px solid skyblue;
+    border-top: 3px solid skyblue;
+    padding: 8px 0 8px 0;   
+}
+
+
+h6.singer {
+    font-size: .8em;
+    font-weight: 600;
+    color: #222222;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+p {
+    margin: 0 0 3px;
+    font-family:'Hiragino Kaku Gothic ProN', メイリオ, sans-serif; 
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+
+/*
+Section
+*/
+
+.sections {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sections1 {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    position: relative;
+    overflow: hidden;  
+}
+
+/* 
+Overlay
+*/
+
+.overlay {
+    background-color: rgba(0, 0, 0, .3) ;
+    width: 100%;
+    overflow:hidden;
+    min-height:1300px;
+    height: 100%;
+    z-index: 2;
+}
+
+.overlay img {
+    position: sticky;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: 1;
+    opacity: .7;
+    max-width: 100px;
+    max-height: 100px;
+   
+}
+
+.overlay1 {
+    width: 100%;
+    overflow:hidden;
+    min-height:1300px;
+    height: 100%;
+}
+
+/* =======================================
+1. Home Page's Top  
+======================================== */
+
+
+.home {
+    
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+}
+
+.background1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/edsheeran1.jpg) no-repeat center top fixed;
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 100%; 
+}
+
+
+/* =======================================
+1. Home Page's Middle 
+======================================== */
+
+#myDiv {
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    z-index: 1;    
+}
+
+#myDiv .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/tattoo7.jpg) no-repeat center fixed;
+    background-size: cover;
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    opacity: .08;
+    width: 100%;
+    height: 100%;  
+}
+
+
+.myDiv-content {
+    position: relative;
+    height: 93.5%;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+
+@media all and (max-width:1400px) {
+    .myDiv-content { height: auto; }
+}
+
+@media all and (max-height:860px) {
+    .myDiv-content { height: auto !important; }
+}
+
+
+#myDiv p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    color: #222222;
+    font-weight: 500;
+    padding: 8px;   
+}
+
+.col-sm-6 p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    color: #fff !important;
+    border-radius: 20px;
+    font-weight: 500;
+    padding 8px;
+    opacity: .85;
+    background: url(../images/bluecolor1.jpg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);    
+}
+
+.container {
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+@media (min-width:768px){
+   
+    .container{width:750px}
+    
+}
+
+@media (min-width:992px){
+    
+    .container{width:970px}
+    
+}
+@media (min-width:1200px){
+    
+    .container{width:1170px}
+    
+}
+
+.row {
+    margin-right:-15px;
+    margin-left:-15px
+}
+
+
+/* =======================================
+1. Icons
+======================================== */
+
+.icons-wrapper {
+    position: relative;
+    background: linear-gradient(45deg, #35577D, #141E30);
+    background-size: cover;
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:block;  
+}
+
+
+.alignleft {
+    float: left;
+    width:33.33333%;
+    text-align:left;
+    padding-top: 0.8em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-bottom: 0.8em;
+}
+
+.alignleft img { 
+    width: 48px; 
+    height: 30px;
+    padding-right: .5em;
+    padding-left: .5em;    
+}
+
+.aligncenter {
+  float: left;
+  width:33.33333%;
+  text-align:center;
+}
+
+.fixscroll{
+    position:fixed;
+    bottom:0px;
+    left:50%;
+}
+
+.fixscrol1{
+    position:fixed;
+    bottom:0px;
+    left:50%;
+}
+
+.alignright {
+ float: left;
+ width:33.33333%;
+ text-align:right;
+ padding-top: 0.8em;
+ padding-right: 1.5em;
+ padding-left: 1.5em;
+ padding-bottom: 0.8em;
+}
+
+.alignright img {
+    width: 48px; 
+    height: 30px;
+    padding-right: .5em;
+    padding-left: .5em;
+}
+
+
+#aboutedsheeran img {  
+　max-height: 200px;   
+}
+
+/* =======================================
+1. Footer
+======================================== */
+
+.footer {
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#fff;
+    background: url(../images/header_color.png);
+    z-index: 4;
+    position: relative;
+    margin-bottom: 0px;  
+}
+
+.main-footer .social{
+    margin-bottom:10px;
+}
+.main-footer .social a{
+    color:#c3bec2;
+    font-size:15px;
+}
+.main-footer .social a:hover{
+    color:#ff2b4a;
+}
+.main-footer .social a i{
+    border-right:1px solid #c3bec2;
+    padding:0 10px 0 10px;
+}
+.main-footer .social a i.dribbble{
+    border-right:0;
+}
+.main-footer p{
+    color:#c3bec2;
+    font-size:12px;	
+}
+
+
+.home-main-content {
+    position: relative;
+    height: 93.5%;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.home-main-content1 {
+    position: relative;
+    height: 84%;
+    overflow: hidden; 
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    position: relative;   
+    z-index: 2;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+    padding-bottom: 80px;   
+}
+
+.home-main-content2 {
+    position: relative;
+    height: auto;
+    overflow: hidden; 
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    position: relative;   
+    z-index: 2;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+    padding-bottom: 80px;  
+}
+
+.home-main-content1 .background_concert, 
+.home-main-content2 .background_concert  { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/concerts2.png) no-repeat center fixed;
+    background-size: cover;
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.songs {
+    display: block;
+    width: 100%;
+    height: 100%; 
+}
+
+.songs a {
+    display: block; 
+    width: 50%;
+    height: 100%;
+    overflow: hidden;  
+}
+
+.song {
+    display: flex;
+    background: url(../images/albumplus.png);
+    border: 12px solid black;
+}
+
+
+.song1 { 
+    display: flex;
+    background: url(../images/albummultiple.png);
+    border: 12px solid black;
+}
+
+.song2 {
+    display: flex;
+    background: url(../images/albumdivide2.jpg);
+    border: 12px solid black;
+}
+
+.song ul, .song1 ul, .song2 ul {
+    padding: 1em;
+}
+
+.song ul li, .song1 ul li, .song2 ul li {
+    font-size: 1em;
+    color: #fff;
+    line-height: 3em;
+    font-weight: 600;
+    text-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.english_lyrics {
+    
+    font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+    width: 50%;
+    line-height: 1.5em;
+    float: left;
+    display: block;
+    background: url(../images/header_color.png) repeat;
+    
+}
+
+.japanese_lyrics {
+    font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding:20px;
+    width: 50%;
+    float: right;
+    line-height: 1.5em;
+    display: block;
+    background: url(../images/header_color.png) repeat;	   
+}
+
+
+/* =======================================
+1.0. Songs List
+======================================== */
+
+.songlist ul {
+    position: fixed;
+    left: 0px;
+    top: 86px;
+    text-shadow: 0 0 20px black;
+    font-weight: 600;
+}
+
+.songlist ul li {
+    font-size: 14px;
+    padding: .5em .4em .5em .4em;
+    border: 1px solid #fff; 
+}
+
+.songlist ul li a {
+    padding: .4em .4em .4em .4em;
+    color: #fff;  
+}
+
+.songlist ul .plusalbum {
+    background-color: #222; 
+    background-size: contain;
+    border-right: 10px solid rgb(209, 107, 43);
+}
+.songlist ul .multiplyalbum {
+    background-color: #222; 
+    background-size: contain;
+    border-right: 10px solid rgb(101, 165, 58);
+}
+
+.songlist ul .dividealbum {
+    background-color: #222; 
+    background-size: contain;
+    border-right: 10px solid rgb(47, 125, 170);
+}
+
+
+
+/* =======================================
+1. News
+======================================== */
+
+
+.news-wrapper {
+    background-size: cover;
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:block;   
+}
+
+.news-wrapper h6 {
+    background: url(../images/bluecolor1.jpg);
+    opacity: .9;
+    color: white;
+    padding-top: .5em;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: .5em;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+
+.news {  
+    margin-bottom: 4%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url(../images/header_color.png);   
+}
+
+.news-img {
+    display: block;
+    padding: .8em;
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+ 
+@media all and (max-width: 500px) {
+    .news {display: block; padding: 1em;}
+    .news-img {width: 100%;}  
+}
+
+.description {
+    font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 8px 8px 0;
+    line-height: 1.5em;
+}
+
+
+/* =======================================
+1. Image Menu
+======================================== */
+
+.image {
+	 -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.image_wrapper {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.image_menu_wrapper {
+    margin-top: 0;
+    text-align: center;
+}
+
+.image_menu {
+    display: inline-block;
+    width: 42%;
+    margin: 0;
+    padding-top: 3%;
+    opacity: .9;        
+}
+
+.image_menu	a {                  
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.image_menu .fa {				
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);             
+    height: 100%;
+    width: 100%;
+    border: 4px solid #444;
+}
+
+@media all and (max-width:1000px) {
+    .image_menu { width: 50%;  }
+     
+  }
+
+
+    
+/* =======================================
+1. Concerts
+======================================== */
+
+#tour {
+    background-size: cover;
+    color: #0f0f0f;
+    padding: 0 0 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;  
+}
+
+#tour .container {
+    margin-bottom: 30px;
+}
+
+h2.chunk {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    position: relative;    
+}
+
+.event-listing {
+    border-top: 1px solid hsla(0,0%,6%,.5);
+    margin-top: 60px;
+}
+
+.event {
+    border-bottom: 1px solid #202020;
+    display: table;
+    font-family: "Calibri",monospace;
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+}
+
+.event a {
+    text-decoration: none;
+    outline: none;
+}
+
+.event .event-date {
+    color: rgb(54, 107, 193);
+    width: 125px;
+}
+
+.event div {
+    display: table-cell;
+    padding: 30px 0;
+    vertical-align: middle;
+}
+
+.event .event-location {
+    width: 200px;   
+}
+
+.event .event-venue {
+    width: 220px;
+}
+
+.event .event-links {
+    text-align: right;
+    width: 25%;
+}
+
+.event .event-links .btn {
+    width: 120px;
+}
+
+@media only screen and (max-width: 991px)
+.event {
+    display: block;
+    padding: 30px 15px 20px;
+}
+
+@media only screen and (max-width: 786px) {
+.event div {
+    display: block!important;
+    margin-bottom: 30px;
+    padding: 0!important;
+    text-align: center!important;
+    width: 100% !important;
+}
+}
+
+
+    @media only screen and (max-width: 786px){
+.event .event-links {
+    text-align: left;
+}
+}
+
+
+@media all and (max-width:1400px) {
+    .home-main-content1  { height: auto; }    
+}
+
+
+
+.btn.btn-primary {
+    background: url(../images/bluecolor1.jpg) 50% repeat;
+    font-size: .8em;
+    color: #fff;
+     opacity: .9;
+    border-color: #2e6da4;
+    width: 120px; 
+}
+
+.btn {
+    position: relative;  
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-family: Source Code Pro,monospace;
+    font-size: 1.1428571429em;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 480px) {
+.event .event-links .btn {
+    margin-bottom: 20px;
+    width: 100%;
+}
+}
+
